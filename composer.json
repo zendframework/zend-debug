@@ -1,6 +1,6 @@
 {
     "name": "zendframework/zend-debug",
-    "description": "Zend\\Debug component",
+    "description": " ",
     "license": "BSD-3-Clause",
     "keywords": [
         "zf2",
@@ -9,11 +9,11 @@
     "homepage": "https://github.com/zendframework/zend-debug",
     "autoload": {
         "psr-4": {
-            "Zend\\Debug\\": "src/"
+            "Zend\\Debug": "src/"
         }
     },
     "require": {
-        "php": ">=5.3.23"
+        "php": ">=5.3.3"
     },
     "require-dev": {
         "zendframework/zend-escaper": "2.*",
