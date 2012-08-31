@@ -1,0 +1,39 @@
+{
+    "name": "zendframework/zend-debug",
+    "description": " ",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2",
+        "debug"
+    ],
+    "homepage": "https://github.com/zendframework/zend-debug",
+    "autoload": {
+        "psr-4": {
+            "Zend\\Debug": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "zendframework/zend-escaper": "2.*",
+        "fabpot/php-cs-fixer": "1.7.*",
+        "satooshi/php-coveralls": "dev-master",
+        "phpunit/PHPUnit": "~4.0"
+    },
+    "suggest": {
+        "ext/xdebug": "XDebug, for better backtrace output",
+        "zendframework/zend-escaper": "To support escaped output"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.4-dev",
+            "dev-develop": "2.5-dev"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZendTest\\Debug\\": "test/"
+        }
+    }
+}
