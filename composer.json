@@ -13,8 +13,7 @@
         }
     },
     "require": {
-        "php": ">=5.3.3",
-        "zendframework/zend-escaper": "self.version"
+        "php": ">=5.3.3"
     },
     "require-dev": {
         "zendframework/zend-escaper": "2.*",
