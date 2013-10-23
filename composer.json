@@ -13,11 +13,10 @@
         }
     },
     "require": {
-        "php": ">=5.3.3",
-        "zendframework/zend-escaper": "self.version"
+        "php": ">=5.3.3"
     },
     "require-dev": {
-        "zendframework/zend-escaper": "2.*",
+        "zendframework/zend-escaper": "*",
         "fabpot/php-cs-fixer": "1.7.*",
         "satooshi/php-coveralls": "dev-master",
         "phpunit/PHPUnit": "~4.0"
