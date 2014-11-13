@@ -13,11 +13,10 @@
         }
     },
     "require": {
-        "php": ">=5.3.3",
-        "zendframework/zend-escaper": "self.version"
+        "php": ">=5.3.23"
     },
     "require-dev": {
-        "zendframework/zend-escaper": "2.*",
+        "zendframework/zend-escaper": "*",
         "fabpot/php-cs-fixer": "1.7.*",
         "satooshi/php-coveralls": "dev-master",
         "phpunit/PHPUnit": "~4.0"
@@ -28,8 +27,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.2-dev",
-            "dev-develop": "2.3-dev"
+            "dev-master": "2.3-dev",
+            "dev-develop": "2.4-dev"
         }
     },
     "autoload-dev": {
