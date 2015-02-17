@@ -6,7 +6,6 @@
         "zf2",
         "debug"
     ],
-    "homepage": "https://github.com/zendframework/zf2",
     "autoload": {
         "psr-0": {
             "Zend\\Debug\\": ""
@@ -14,10 +13,10 @@
     },
     "target-dir": "Zend/Debug",
     "require": {
-        "php": ">=5.3.23"
+        "php": ">=5.3.3"
     },
     "require-dev": {
-        "zendframework/zend-escaper": "2.*"
+        "zendframework/zend-escaper": "*"
     },
     "suggest": {
         "ext/xdebug": "XDebug, for better backtrace output",
@@ -25,8 +24,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.3-dev",
-            "dev-develop": "2.4-dev"
+            "dev-master": "2.2-dev",
+            "dev-develop": "2.3-dev"
         }
     }
 }
