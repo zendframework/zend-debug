@@ -25,6 +25,8 @@
         "ext/xdebug": "XDebug, for better backtrace output",
         "zendframework/zend-escaper": "To support escaped output"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "branch-alias": {
             "dev-master": "2.4-dev",
