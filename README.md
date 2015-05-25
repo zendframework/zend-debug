@@ -1,7 +1,7 @@
 # zend-debug
 
 [![Build Status](https://secure.travis-ci.org/zendframework/zend-debug.svg?branch=master)](https://secure.travis-ci.org/zendframework/zend-debug)
-[![Coverage Status](https://coveralls.io/repos/zendframework/zend-debug/badge.svg?branch=master)](https://coveralls.io/r/zendframework/zend-debug)
+[![Coverage Status](https://coveralls.io/repos/zendframework/zend-debug/badge.svg?branch=master)](https://coveralls.io/r/zendframework/zend-debug?branch=master)
 
 `Zend\Debug` is a component that help the debugging of PHP applications. In
 particular it offers a static method `Zend\Debug\Debug::dump()` that prints or
