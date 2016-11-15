@@ -90,7 +90,7 @@ class Debug
     public static function dump($var, $label = null, $echo = true)
     {
         // format the label
-        $label = ($label===null) ? '' : rtrim($label) . ' ';
+        $label = ($label === null) ? '' : rtrim($label) . ' ';
 
         // var_dump the variable into a buffer and keep the output
         ob_start();
@@ -106,7 +106,7 @@ class Debug
         } else {
             if (null !== static::$escaper) {
                 $output = static::$escaper->escapeHtml($output);
-            } elseif (!extension_loaded('xdebug')) {
+            } elseif (! extension_loaded('xdebug')) {
                 $output = static::getEscaper()->escapeHtml($output);
             }
 

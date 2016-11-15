@@ -43,7 +43,8 @@ class DebugTest extends \PHPUnit_Framework_TestCase
         $result = Debug::Dump($data, null, false);
 
         // Has to check for two strings, because xdebug internally handles CLI vs Web
-        $this->assertContains($result,
+        $this->assertContains(
+            $result,
             [
                 "<pre>string(6) \"string\"\n</pre>",
                 "<pre>string(6) &quot;string&quot;\n</pre>",
@@ -82,7 +83,7 @@ class DebugTest extends \PHPUnit_Framework_TestCase
      */
     public function testXdebugEnabledAndNonCliSapiDoesNotEscapeSpecialChars()
     {
-        if (!extension_loaded('xdebug')) {
+        if (! extension_loaded('xdebug')) {
             $this->markTestSkipped("This test only works in combination with xdebug.");
         }
 
