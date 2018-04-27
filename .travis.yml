@@ -23,7 +23,6 @@ env:
     - COMPOSER_ARGS="--no-interaction --ignore-platform-reqs"
 
 matrix:
-  fast_finish: true
   include:
       - php: 5.6
         env:
