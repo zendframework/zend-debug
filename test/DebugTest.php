@@ -15,7 +15,9 @@ use Zend\Escaper\Escaper;
 /**
  * @group      Zend_Debug
  */
-class DebugTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class DebugTest extends TestCase
 {
     public function testDebugDefaultSapi()
     {

@@ -31,13 +31,13 @@ detected as a web presentation, the output of `var_dump()` is escaped using
 
 
 > ### Debugging with Zend\Log
-> 
+>
 > ``Zend\Debug\Debug::dump()`` is best for ad hoc debugging during software
 > development. You can add code to dump a variable and then remove the code very
 > quickly.
-> 
-> Also consider the [zend-log component](http://zendframework.github.io/zend-log/)
+>
+> Also consider the [zend-log component](http://docs.zendframework.com/zend-log/)
 > when writing more permanent debugging code. For example, you can use the
 > `DEBUG` log level and the
-> [stream log writer](http://zendframework.github.io/zend-log/writers/#writing-to-streams)
+> [stream log writer](http://docs.zendframework.com/zend-log/writers/#writing-to-streams)
 > to output the string returned by `Zend\Debug\Debug::dump()`.
