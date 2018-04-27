@@ -13,12 +13,12 @@
         }
     },
     "require": {
-        "php": ">=5.5",
+        "php": "^5.6 || ^7.0"
         "zendframework/zend-escaper": "2.*"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "1.7.*",
-        "phpunit/phpunit": "^4.5"
+        "phpunit/PHPUnit": "^4.8"
     },
     "suggest": {
         "ext-xdebug": "XDebug, for better backtrace output"

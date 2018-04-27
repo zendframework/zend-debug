@@ -15,10 +15,11 @@ cache:
 
 env:
   global:
-    - SITE_URL: https://zendframework.github.io/zend-debug
-    - GH_USER_NAME: "Matthew Weier O'Phinney"
-    - GH_USER_EMAIL: matthew@weierophinney.net
-    - GH_REF: github.com/zendframework/zend-debug.git
+    - COMPOSER_ARGS="--no-interaction --ignore-platform-reqs"
+    - SITE_URL="https://zendframework.github.io/zend-debug"
+    - GH_USER_NAME="Matthew Weier O'Phinney"
+    - GH_USER_EMAIL="matthew@weierophinney.net"
+    - GH_REF="github.com/zendframework/zend-debug.git"
     - secure: "L2VCLoMn2dvOci7YvfIPOx8a3DikGtCj8NuQve5IoE2LMCMyDwO78vgQ+/phcz8k+Acw9XBthtlIIJvjhtlN1rgywAhoEEO/QmtqIUmzPwFTEgP8un0L6I9K4rZMEJ0akKrEVDGyZzXFv3xCXyANzqIo7aVAoFFbnGjKo/Dktb1RBFkiAitVLcNAcNud/JxTvscsI4Y7Cx/sCmG6AgYm+4ibGo8Ev+L3etK+00IovTALxhKmu53PIIxUxClmMOTQ4wny6H6JNwcm9xr83Mxhn0jUWQeVlFXUEUGKC9IxHGaCa5pBOv2vtRyWrUkMzzqiZjtAGaRNCIiPx3PmXJmE1Z1sEQ3NuCbx8JBnF9pRg2Ewloc8nqRnTXzciJOsFgrifWEQBgajv12+WsWmpkrofYZ3HLdyWd7a5UT5T3xqtM3YnMKQe4j3uM43k+crlEFsxwUcf8i3Kcbm4PvkP0RPdyOgwdNAd6oMrzu2vQL6qwunuFipLkj475z8psSAuo3fPzI9FygaLf3pJMeRHPiv3yKotnAvge4JhBAPC90SvY/irjgB+hDitRemLHfKvdC6U2eC0uAhFCpI3kiv9oS8QRwdx+yzGXW1tRUbbMiye582QRgRZaJPKYw9w6NciGPAMsxGfoo+nNK9Lqx7XbI6KNZFwcLRmpVH7zpjiYL7Tto="
     - COMPOSER_ARGS="--no-interaction --ignore-platform-reqs"
 
