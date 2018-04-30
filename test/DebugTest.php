@@ -32,7 +32,7 @@ class DebugTest extends TestCase
         $data = 'string';
         $result = Debug::dump($data, null, false);
         $result = str_replace([PHP_EOL, "\n"], '_', $result);
-        $expected = "__string(6) \"string\"__";
+        $expected = '__string(6) "string"__';
         $this->assertEquals($expected, $result);
     }
 
@@ -84,15 +84,15 @@ class DebugTest extends TestCase
     public function testXdebugEnabledAndNonCliSapiDoesNotEscapeSpecialChars()
     {
         if (! extension_loaded('xdebug')) {
-            $this->markTestSkipped("This test only works in combination with xdebug.");
+            $this->markTestSkipped('This test only works in combination with xdebug.');
         }
 
         Debug::setSapi('apache');
-        $a = ["a" => "b"];
+        $a = ['a' => 'b'];
 
-        $result = Debug::dump($a, "LABEL", false);
-        $this->assertContains("<pre>", $result);
-        $this->assertContains("</pre>", $result);
+        $result = Debug::dump($a, 'LABEL', false);
+        $this->assertContains('<pre>', $result);
+        $this->assertContains('</pre>', $result);
     }
 
     public function testDebugHaveEscaper()
@@ -102,8 +102,8 @@ class DebugTest extends TestCase
         $escaper = new Escaper;
         Debug::setEscaper($escaper);
 
-        $a = ["a" => "<script type=\"text/javascript\""];
-        $result = Debug::dump($a, "LABEL", false);
-        $this->assertContains("&lt;script type=&quot;text/javascript&quot;&quot;", $result);
+        $a = ['a' => '<script type="text/javascript"'];
+        $result = Debug::dump($a, 'LABEL', false);
+        $this->assertContains('&lt;script type=&quot;text/javascript&quot;&quot;', $result);
     }
 }
