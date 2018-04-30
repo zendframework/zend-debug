@@ -22,7 +22,7 @@ class DebugTest extends TestCase
         $sapi = php_sapi_name();
         Debug::setSapi(null);
         $data = 'string';
-        $result = Debug::Dump($data, null, false);
+        $result = Debug::dump($data, null, false);
         $this->assertEquals($sapi, Debug::getSapi());
     }
 
@@ -30,7 +30,7 @@ class DebugTest extends TestCase
     {
         Debug::setSapi('cli');
         $data = 'string';
-        $result = Debug::Dump($data, null, false);
+        $result = Debug::dump($data, null, false);
         $result = str_replace([PHP_EOL, "\n"], '_', $result);
         $expected = "__string(6) \"string\"__";
         $this->assertEquals($expected, $result);
@@ -40,7 +40,7 @@ class DebugTest extends TestCase
     {
         Debug::setSapi('cgi');
         $data = 'string';
-        $result = Debug::Dump($data, null, false);
+        $result = Debug::dump($data, null, false);
 
         // Has to check for two strings, because xdebug internally handles CLI vs Web
         $this->assertContains(
@@ -58,7 +58,7 @@ class DebugTest extends TestCase
         $data = 'string';
 
         ob_start();
-        $result1 = Debug::Dump($data, null, true);
+        $result1 = Debug::dump($data, null, true);
         $result2 = ob_get_contents();
         ob_end_clean();
 
@@ -71,7 +71,7 @@ class DebugTest extends TestCase
         Debug::setSapi('cli');
         $data = 'string';
         $label = 'LABEL';
-        $result = Debug::Dump($data, $label, false);
+        $result = Debug::dump($data, $label, false);
         $result = str_replace([PHP_EOL, "\n"], '_', $result);
         $expected = "_{$label} _string(6) \"string\"__";
         $this->assertEquals($expected, $result);
