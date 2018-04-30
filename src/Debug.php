@@ -17,12 +17,12 @@ class Debug
     /**
      * @var Escaper
      */
-    protected static $escaper = null;
+    protected static $escaper;
 
     /**
      * @var string
      */
-    protected static $sapi = null;
+    protected static $sapi;
 
     /**
      * Get the current value of the debug output environment.
