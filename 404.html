@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="zend-debug">  
-    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" href="//img/favicon.ico">
 
-    <title>Usage - zend-debug - Zend Framework Docs</title>
+    <title>zend-debug - Zend Framework Docs</title>
 
-    <link rel="stylesheet" href="../css/styles-f3b53f5ceb.css">
+    <link rel="stylesheet" href="//css/styles-f3b53f5ceb.css">
 </head>
 <body id="page-top">
 
@@ -31,7 +31,7 @@
             
             <span class="navbar-brand">
                 <a class="logo-link" href="https://framework.zend.com/" data-tooltip data-placement="bottom" title="Go to the ZF homepage">
-                    <img src="../img/zend-framework-logo.svg" height="28" alt="Zend Framework">
+                    <img src="//img/zend-framework-logo.svg" height="28" alt="Zend Framework">
                 </a>
             </span>
         </div>
@@ -66,7 +66,7 @@
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href="..">zend-debug</a>
+            <a href="/.">zend-debug</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -75,13 +75,13 @@
             
                 
                     <li class="subnavigation__list-item ">
-                        <a href=".." class="subnavigation__link">zend-debug</a>
+                        <a href="/." class="subnavigation__link">zend-debug</a>
                     </li>
                 
             
                 
-                    <li class="subnavigation__list-item subnavigation__list-item--active">
-                        <a href="./" class="subnavigation__link">Usage</a>
+                    <li class="subnavigation__list-item ">
+                        <a href="/usage/" class="subnavigation__link">Usage</a>
                     </li>
                 
             
@@ -154,110 +154,18 @@
             <div class="col-md-9 col-xs-12 content" role="main">
             <!-- content:begin -->
                 
-                    <ol class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
-    <li><a href="https://framework.zend.com/">Home</a></li>
 
-    
-        <li><a href="https://docs.zendframework.com/">Documentation</a></li>
-
-        
-            <li><a href="..">zend-debug</a></li>
-
-            
-
-            <li class="active">Usage</li>
-        
-    
-</ol>
-
-
-    
-
-    
-    
-
-    
-    
-        <div class="toc">
-            <h6 class="toc__headline">In This Article</h6>
-            <ul class="toc__list">
-                
-                    <li class="toc__entry">
-                        <a href="#example" class="toc__link">Example</a>
-                    </li>
-                
-            </ul>
-        </div>
-    
-
-
-    <h1 id="usage">Usage</h1>
-<p>zend-debug exposes the static method <code>Zend\Debug\Debug::dump()</code>, which prints or
-returns information about an expression. This simple technique of debugging is
-common because it is easy to use in an ad hoc fashion and requires no
-initialization, special tools, or debugging environment.</p>
-<h2 id="example">Example</h2>
-<pre class="codehilite"><code class="language-php">Zend\Debug\Debug::dump($var, $label = null, $echo = true);</code></pre>
-
-<p>The <code>$var</code> argument specifies the expression or variable about which the
-<code>Zend\Debug\Debug::dump()</code> method outputs information.</p>
-<p>The <code>$label</code> argument is a string to be prepended to the output of
-<code>Zend\Debug\Debug::dump()</code>. It may be useful, for example, to use labels if you
-are dumping information about multiple variables on a given screen.</p>
-<p>The boolean <code>$echo</code> argument specifies whether the output of
-<code>Zend\Debug\Debug::dump()</code> is echoed or not. If <code>TRUE</code>, the output is echoed.
-Regardless of the value of the <code>$echo</code> argument, the return value of this method
-contains the output.</p>
-<p>It may be helpful to understand that <code>Zend\Debug\Debug::dump()</code> wraps the PHP
-function <a href="http://php.net/var_dump"><code>var_dump()</code></a>. If the output stream is
-detected as a web presentation, the output of <code>var_dump()</code> is escaped using
-<a href="http://php.net/htmlspecialchars"><code>htmlspecialchars()</code></a> and wrapped with HTML
-<code>&lt;pre&gt;</code> tags.</p>
+<h1 class="content__title">404</h1>
 <blockquote>
-<h3 id="debugging-with-zendlog">Debugging with Zend\Log</h3>
-<p><code>Zend\Debug\Debug::dump()</code> is best for ad hoc debugging during software
-development. You can add code to dump a variable and then remove the code very
-quickly.</p>
-<p>Also consider the <a href="http://docs.zendframework.com/zend-log/">zend-log component</a>
-when writing more permanent debugging code. For example, you can use the
-<code>DEBUG</code> log level and the
-<a href="http://docs.zendframework.com/zend-log/writers/#writing-to-streams">stream log writer</a>
-to output the string returned by <code>Zend\Debug\Debug::dump()</code>.</p>
+    <h3>Something went wrong!</h3>
+    <p>
+        We're sorry, but the page you are looking for does not exist.
+    </p>
 </blockquote>
 
+<a href="/" class="btn btn-default" role="button">Go to homepage</a>
 
 
-    <nav>
-    <ul class="page-nav hidden-print">
-
-        
-        <li class="page-nav__item">
-            
-                <a rel="prev" class="page-nav__link page-nav__link--prev" href="..">
-                    <i class="fa fa-chevron-left"></i> Previous
-                </a>
-            
-        </li>
-
-        
-        <li class="page-nav__item">
-            
-        </li>
-    </ul>
-</nav>
-
-
-
-    <div class="help-wanted">
-        <p>
-            Found a mistake or want to contribute to the documentation?
-            <a href="https://github.com/zendframework/zend-debug/edit/master/docs/book/usage.md" target="_blank" class="help-wanted__link">
-                Edit this page on GitHub!
-            </a>
-        </p>
-    </div>
-
-                
             <!-- content:end -->
             </div>
             <div class="col-md-3 col-xs-12 sidebar">
@@ -273,7 +181,7 @@ to output the string returned by <code>Zend\Debug\Debug::dump()</code>.</p>
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href="..">zend-debug</a>
+            <a href="/.">zend-debug</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -282,13 +190,13 @@ to output the string returned by <code>Zend\Debug\Debug::dump()</code>.</p>
             
                 
                     <li class="subnavigation__list-item ">
-                        <a href=".." class="subnavigation__link">zend-debug</a>
+                        <a href="/." class="subnavigation__link">zend-debug</a>
                     </li>
                 
             
                 
-                    <li class="subnavigation__list-item subnavigation__list-item--active">
-                        <a href="./" class="subnavigation__link">Usage</a>
+                    <li class="subnavigation__list-item ">
+                        <a href="/usage/" class="subnavigation__link">Usage</a>
                     </li>
                 
             
@@ -363,11 +271,11 @@ to output the string returned by <code>Zend\Debug\Debug::dump()</code>.</p>
 </footer>
 
     <script>
-        var base_url = '..',
+        var base_url = '/',
             siteName = 'zend-debug';
     </script>
-    <script src="../js/scripts-8d7ae56abf.js"></script>
-        <script src="../search/main.js"></script>
+    <script src="//js/scripts-8d7ae56abf.js"></script>
+        <script src="/search/main.js"></script>
 
     
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
