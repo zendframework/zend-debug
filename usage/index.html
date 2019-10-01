@@ -223,8 +223,7 @@ returns information about an expression. This simple technique of debugging is
 common because it is easy to use in an ad hoc fashion and requires no
 initialization, special tools, or debugging environment.</p>
 <h2 id="example">Example</h2>
-<pre class="codehilite"><code class="language-php">Zend\Debug\Debug::dump($var, $label = null, $echo = true);</code></pre>
-
+<p> <pre class=codehilite><code class=language-php>Zend\Debug\Debug::dump($var, $label = null, $echo = true);</code></pre></p>
 <p>The <code>$var</code> argument specifies the expression or variable about which the
 <code>Zend\Debug\Debug::dump()</code> method outputs information.</p>
 <p>The <code>$label</code> argument is a string to be prepended to the output of
@@ -240,7 +239,7 @@ detected as a web presentation, the output of <code>var_dump()</code> is escaped
 <a href="http://php.net/htmlspecialchars"><code>htmlspecialchars()</code></a> and wrapped with HTML
 <code>&lt;pre&gt;</code> tags.</p>
 <blockquote>
-<h3 id="debugging-with-zendlog">Debugging with Zend\Log</h3>
+<h3>Debugging with Zend\Log</h3>
 <p><code>Zend\Debug\Debug::dump()</code> is best for ad hoc debugging during software
 development. You can add code to dump a variable and then remove the code very
 quickly.</p>
@@ -279,7 +278,7 @@ to output the string returned by <code>Zend\Debug\Debug::dump()</code>.</p>
     <div class="help-wanted">
         <p>
             Found a mistake or want to contribute to the documentation?
-            <a href="https://github.com/zendframework/zend-debug/edit/master/docs/usage.md" target="_blank" class="help-wanted__link">
+            <a href="https://github.com/zendframework/zend-debug/edit/master/docs/book/usage.md" target="_blank" class="help-wanted__link">
                 Edit this page on GitHub!
             </a>
         </p>
